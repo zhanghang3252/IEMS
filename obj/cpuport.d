@@ -1,0 +1,8 @@
+./objects/cpuport.o: \
+  lib\rtthread-nano\rt-thread\libcpu\arm\cortex-m4\cpuport.c \
+  lib\rtthread-nano\rt-thread\include\rtthread.h \
+  lib\rtthread-nano\rt-thread\bsp\_template\rtconfig.h \
+  lib\rtthread-nano\rt-thread\include\rtdebug.h \
+  lib\rtthread-nano\rt-thread\include\rtdef.h \
+  lib\rtthread-nano\rt-thread\include\rtservice.h \
+  lib\rtthread-nano\rt-thread\include\rtm.h
