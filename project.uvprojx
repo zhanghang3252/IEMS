@@ -484,6 +484,21 @@
               <FileType>5</FileType>
               <FilePath>.\drive\can.h</FilePath>
             </File>
+            <File>
+              <FileName>I2C.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\drive\I2C.c</FilePath>
+            </File>
+            <File>
+              <FileName>I2C.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\drive\I2C.h</FilePath>
+            </File>
+            <File>
+              <FileName>at24cxx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\drive\at24cxx.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

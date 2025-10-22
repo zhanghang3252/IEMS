@@ -48,3 +48,5 @@
 .\obj\can.o: .\drive\rs485.h
 .\obj\can.o: .\user\main.h
 .\obj\can.o: .\drive\can.h
+.\obj\can.o: .\drive\i2c.h
+.\obj\can.o: .\drive\at24cxx.h

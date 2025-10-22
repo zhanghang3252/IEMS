@@ -13,7 +13,8 @@
 #include "sdcard.h"
 #include "rs485.h"
 #include "can.h"
-
+#include "i2c.h"
+#include "at24cxx.h"
 #endif
 
 

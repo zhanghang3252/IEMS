@@ -2,8 +2,6 @@
 
 uint8_t rx485_buf[20];
 
-
-
 uint8_t usart_rx_buf[20];
 
 int main(void)
@@ -11,27 +9,30 @@ int main(void)
 	systick_config();
 	led_init();
 	usart0_init(115200);
-	//usart2_init(115200);
+//	usart2_init(115200);
+	i2c_init();
+	
+	i2c_eeprom_init();
+	
 	//can0_init();
 	//rs485_init();
 	
-	printf("\r\n system start \r\n");
+	printf("system start \r\n");
 	if (sd_io_init() == SD_OK)//SDø®≥ı ºªØ
-		printf("\r\n Card init success!\r\n");
+		printf("Card init success!\r\n");
 	else
-		printf("\r\n Card init failed!\r\n");
-		
+		printf("Card init failed!\r\n");
+	i2c_24c02_test();
 	while(1)
 	{	
-		usart_send_data(USART0,(uint8_t *)"serial test\r\n");
-//		usart_receive_data(usart_rx_buf);
+//		usart_send_data_num(USART2,"AT\r\n",sizeof("AT\r\n"));
 //		can0_send_test();				
 //    rs485_send_data(1);
 //		rs485_receive_data(rx485_buf);
 //		printf("rx485_buf£∫%s",rx485_buf);
-//		led_on();
-//		delay_1ms(1000);
-//		led_off();
+		led_on();
+		delay_1ms(1000);
+		led_off();
 		delay_1ms(1000);	
 	}	
 }

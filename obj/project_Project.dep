@@ -1,7 +1,7 @@
 Dependencies for Project 'project', Target 'Project': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (.\user\main.c)(0x68F5E815)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\lib\GD32F4xx_Firmware_Library\CMSIS -I .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include -I .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include -I .\drive -I .\user-IC:\APP\Keil_v5\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="543" -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407 -DHXTAL_VALUE="8000000"-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
-I (user\main.h)(0x68F3BA27)
+F (.\user\main.c)(0x68F8E3CC)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\lib\GD32F4xx_Firmware_Library\CMSIS -I .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include -I .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include -I .\drive -I .\user-IC:\APP\Keil_v5\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="543" -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407 -DHXTAL_VALUE="8000000"-o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (user\main.h)(0x68F78AC9)
 I (C:\APP\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (C:\APP\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (C:\APP\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
@@ -42,14 +42,16 @@ I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx
 I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x68A70A23)
 I (user\systick.h)(0x68EBB2DD)
 I (.\drive\led.h)(0x68EBCA48)
-I (.\drive\usart.h)(0x68F5A945)
+I (.\drive\usart.h)(0x68F621D8)
 I (.\drive\rtc.h)(0x68EBD497)
 I (.\drive\sdcard.h)(0x68F4F394)
 I (.\drive\rs485.h)(0x68F32D2E)
-I (.\user\main.h)(0x68F3BA27)
+I (.\user\main.h)(0x68F78AC9)
 I (.\drive\can.h)(0x68F4F3FA)
-F (.\user\main.h)(0x68F3BA27)()
-F (.\user\gd32f4xx_it.c)(0x68F1227A)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\lib\GD32F4xx_Firmware_Library\CMSIS -I .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include -I .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include -I .\drive -I .\user-IC:\APP\Keil_v5\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="543" -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407 -DHXTAL_VALUE="8000000"-o .\obj\gd32f4xx_it.o --omf_browse .\obj\gd32f4xx_it.crf --depend .\obj\gd32f4xx_it.d)
+I (.\drive\i2c.h)(0x68F8E3C8)
+I (.\drive\at24cxx.h)(0x68A6E088)
+F (.\user\main.h)(0x68F78AC9)()
+F (.\user\gd32f4xx_it.c)(0x68F78A0F)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\lib\GD32F4xx_Firmware_Library\CMSIS -I .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include -I .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include -I .\drive -I .\user-IC:\APP\Keil_v5\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="543" -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407 -DHXTAL_VALUE="8000000"-o .\obj\gd32f4xx_it.o --omf_browse .\obj\gd32f4xx_it.crf --depend .\obj\gd32f4xx_it.d)
 I (user\gd32f4xx_it.h)(0x68EE5B68)
 I (.\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x68A70A23)
 I (.\lib\GD32F4xx_Firmware_Library\CMSIS\core_cm4.h)(0x68A70A23)
@@ -170,8 +172,8 @@ I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx
 I (C:\APP\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x68A70A23)
 F (.\drive\led.h)(0x68EBCA48)()
-F (.\drive\usart.c)(0x68F6156C)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\lib\GD32F4xx_Firmware_Library\CMSIS -I .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include -I .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include -I .\drive -I .\user-IC:\APP\Keil_v5\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="543" -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407 -DHXTAL_VALUE="8000000"-o .\obj\usart.o --omf_browse .\obj\usart.crf --depend .\obj\usart.d)
-I (drive\usart.h)(0x68F5A945)
+F (.\drive\usart.c)(0x68F8E38B)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\lib\GD32F4xx_Firmware_Library\CMSIS -I .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include -I .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include -I .\drive -I .\user-IC:\APP\Keil_v5\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="543" -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407 -DHXTAL_VALUE="8000000"-o .\obj\usart.o --omf_browse .\obj\usart.crf --depend .\obj\usart.d)
+I (drive\usart.h)(0x68F621D8)
 I (.\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x68A70A23)
 I (.\lib\GD32F4xx_Firmware_Library\CMSIS\core_cm4.h)(0x68A70A23)
 I (C:\APP\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
@@ -210,7 +212,7 @@ I (C:\APP\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x68A70A23)
 I (C:\APP\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (C:\APP\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
-F (.\drive\usart.h)(0x68F5A945)()
+F (.\drive\usart.h)(0x68F621D8)()
 F (.\drive\rtc.c)(0x68EBD5DA)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\lib\GD32F4xx_Firmware_Library\CMSIS -I .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include -I .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include -I .\drive -I .\user-IC:\APP\Keil_v5\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="543" -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407 -DHXTAL_VALUE="8000000"-o .\obj\rtc.o --omf_browse .\obj\rtc.crf --depend .\obj\rtc.d)
 I (drive\rtc.h)(0x68EBD497)
 I (.\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x68A70A23)
@@ -294,7 +296,7 @@ I (C:\APP\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
 F (.\drive\sdcard.h)(0x68F4F394)()
 F (.\drive\rs485.c)(0x68F595DD)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\lib\GD32F4xx_Firmware_Library\CMSIS -I .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include -I .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include -I .\drive -I .\user-IC:\APP\Keil_v5\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="543" -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407 -DHXTAL_VALUE="8000000"-o .\obj\rs485.o --omf_browse .\obj\rs485.crf --depend .\obj\rs485.d)
 I (drive\rs485.h)(0x68F32D2E)
-I (.\user\main.h)(0x68F3BA27)
+I (.\user\main.h)(0x68F78AC9)
 I (C:\APP\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (C:\APP\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (C:\APP\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
@@ -335,15 +337,17 @@ I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx
 I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x68A70A23)
 I (.\user\systick.h)(0x68EBB2DD)
 I (.\drive\led.h)(0x68EBCA48)
-I (.\drive\usart.h)(0x68F5A945)
+I (.\drive\usart.h)(0x68F621D8)
 I (.\drive\rtc.h)(0x68EBD497)
 I (.\drive\sdcard.h)(0x68F4F394)
 I (.\drive\rs485.h)(0x68F32D2E)
 I (.\drive\can.h)(0x68F4F3FA)
+I (.\drive\i2c.h)(0x68F8E3C8)
+I (.\drive\at24cxx.h)(0x68A6E088)
 F (.\drive\rs485.h)(0x68F32D2E)()
 F (.\drive\can.c)(0x68F4FD4F)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\lib\GD32F4xx_Firmware_Library\CMSIS -I .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include -I .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include -I .\drive -I .\user-IC:\APP\Keil_v5\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="543" -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407 -DHXTAL_VALUE="8000000"-o .\obj\can.o --omf_browse .\obj\can.crf --depend .\obj\can.d)
 I (drive\can.h)(0x68F4F3FA)
-I (.\user\main.h)(0x68F3BA27)
+I (.\user\main.h)(0x68F78AC9)
 I (C:\APP\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (C:\APP\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (C:\APP\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
@@ -384,12 +388,96 @@ I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx
 I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x68A70A23)
 I (.\user\systick.h)(0x68EBB2DD)
 I (.\drive\led.h)(0x68EBCA48)
-I (.\drive\usart.h)(0x68F5A945)
+I (.\drive\usart.h)(0x68F621D8)
 I (.\drive\rtc.h)(0x68EBD497)
 I (.\drive\sdcard.h)(0x68F4F394)
 I (.\drive\rs485.h)(0x68F32D2E)
 I (.\drive\can.h)(0x68F4F3FA)
+I (.\drive\i2c.h)(0x68F8E3C8)
+I (.\drive\at24cxx.h)(0x68A6E088)
 F (.\drive\can.h)(0x68F4F3FA)()
+F (.\drive\I2C.c)(0x68F8E3CD)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\lib\GD32F4xx_Firmware_Library\CMSIS -I .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include -I .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include -I .\drive -I .\user-IC:\APP\Keil_v5\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="543" -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407 -DHXTAL_VALUE="8000000"-o .\obj\i2c.o --omf_browse .\obj\i2c.crf --depend .\obj\i2c.d)
+I (.\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\CMSIS\core_cm4.h)(0x68A70A23)
+I (C:\APP\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (.\lib\GD32F4xx_Firmware_Library\CMSIS\core_cmInstr.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\CMSIS\core_cmFunc.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\CMSIS\core_cm4_simd.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x68A70A23)
+I (.\user\gd32f4xx_libopt.h)(0x68A709D9)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x68A70A23)
+I (C:\APP\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x68A70A23)
+I (drive\i2c.h)(0x68F8E3C8)
+I (C:\APP\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
+I (.\user\systick.h)(0x68EBB2DD)
+I (drive\at24cxx.h)(0x68A6E088)
+F (.\drive\I2C.h)(0x68F8E3C8)()
+F (.\drive\at24cxx.c)(0x68F78D8D)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\lib\GD32F4xx_Firmware_Library\CMSIS -I .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include -I .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include -I .\drive -I .\user-IC:\APP\Keil_v5\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="543" -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407 -DHXTAL_VALUE="8000000"-o .\obj\at24cxx.o --omf_browse .\obj\at24cxx.crf --depend .\obj\at24cxx.d)
+I (drive\at24cxx.h)(0x68A6E088)
+I (.\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\CMSIS\core_cm4.h)(0x68A70A23)
+I (C:\APP\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (.\lib\GD32F4xx_Firmware_Library\CMSIS\core_cmInstr.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\CMSIS\core_cmFunc.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\CMSIS\core_cm4_simd.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x68A70A23)
+I (.\user\gd32f4xx_libopt.h)(0x68A709D9)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x68A70A23)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x68A70A23)
+I (C:\APP\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x68A70A23)
+I (drive\i2c.h)(0x68F8E3C8)
+I (C:\APP\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 F (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_adc.c)(0x68A70A23)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\lib\GD32F4xx_Firmware_Library\CMSIS -I .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include -I .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include -I .\drive -I .\user-IC:\APP\Keil_v5\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="543" -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407 -DHXTAL_VALUE="8000000"-o .\obj\gd32f4xx_adc.o --omf_browse .\obj\gd32f4xx_adc.crf --depend .\obj\gd32f4xx_adc.d)
 I (.\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x68A70A23)
 I (.\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x68A70A23)
