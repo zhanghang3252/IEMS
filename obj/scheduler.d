@@ -1,8 +1,12 @@
-./objects/scheduler.o: lib\rtthread-nano\rt-thread\src\scheduler.c \
-  lib\rtthread-nano\rt-thread\include\rtthread.h \
-  lib\rtthread-nano\rt-thread\bsp\_template\rtconfig.h \
-  lib\rtthread-nano\rt-thread\include\rtdebug.h \
-  lib\rtthread-nano\rt-thread\include\rtdef.h \
-  lib\rtthread-nano\rt-thread\include\rtservice.h \
-  lib\rtthread-nano\rt-thread\include\rtm.h \
-  lib\rtthread-nano\rt-thread\include\rthw.h
+.\obj\scheduler.o: lib\rtthread-nano\rt-thread\src\scheduler.c
+.\obj\scheduler.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\scheduler.o: .\lib\rtthread-nano\rt-thread\config\rtconfig.h
+.\obj\scheduler.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh_config.h
+.\obj\scheduler.o: .\lib\rtthread-nano\rt-thread\include\rtdebug.h
+.\obj\scheduler.o: .\lib\rtthread-nano\rt-thread\include\rtdef.h
+.\obj\scheduler.o: .\lib\rtthread-nano\rt-thread\include\rtservice.h
+.\obj\scheduler.o: .\lib\rtthread-nano\rt-thread\include\rtm.h
+.\obj\scheduler.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\scheduler.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\obj\scheduler.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh.h
+.\obj\scheduler.o: .\lib\rtthread-nano\rt-thread\include\rthw.h

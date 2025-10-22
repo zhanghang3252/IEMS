@@ -48,18 +48,18 @@ void NMI_Handler(void)
     }
 }
 
-/*!
-    \brief      this function handles HardFault exception
-    \param[in]  none
-    \param[out] none
-    \retval     none
-*/
-void HardFault_Handler(void)
-{
-    /* if Hard Fault exception occurs, go to infinite loop */
-    while(1) {
-    }
-}
+///*!
+//    \brief      this function handles HardFault exception
+//    \param[in]  none
+//    \param[out] none
+//    \retval     none
+//*/
+//void HardFault_Handler(void)
+//{
+//    /* if Hard Fault exception occurs, go to infinite loop */
+//    while(1) {
+//    }
+//}
 
 /*!
     \brief      this function handles MemManage exception
@@ -126,48 +126,36 @@ void DebugMon_Handler(void)
     }
 }
 
-/*!
-    \brief      this function handles PendSV exception
-    \param[in]  none
-    \param[out] none
-    \retval     none
-*/
-void PendSV_Handler(void)
-{
-    /* if PendSV exception occurs, go to infinite loop */
-    while(1) {
-    }
-}
+///*!
+//    \brief      this function handles PendSV exception
+//    \param[in]  none
+//    \param[out] none
+//    \retval     none
+//*/
+//void PendSV_Handler(void)
+//{
+//    /* if PendSV exception occurs, go to infinite loop */
+//    while(1) {
+//    }
+//}
 
-/*!
-    \brief      this function handles SysTick exception
-    \param[in]  none
-    \param[out] none
-    \retval     none
-*/
-uint32_t systick;
-void SysTick_Handler(void)
-{
-		systick++;
-    delay_decrement();
-}
+///*!
+//    \brief      this function handles SysTick exception
+//    \param[in]  none
+//    \param[out] none
+//    \retval     none
+//*/
+//uint32_t systick;
+//void SysTick_Handler(void)
+//{
+//		systick++;
+//    delay_decrement();
+//}
 
-uint32_t get_systick(void)
-{
-	return systick;
-}
-
-
-/*!
-    \brief      this function handles SDIO interrupt request
-    \param[in]  none
-    \param[out] none
-    \retval     none
-*/
-void SDIO_IRQHandler(void)
-{
-    sd_interrupts_process();
-}
+//uint32_t get_systick(void)
+//{
+//	return systick;
+//}
 
 
 

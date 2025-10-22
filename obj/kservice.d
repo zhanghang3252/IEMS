@@ -1,8 +1,12 @@
-./objects/kservice.o: lib\rtthread-nano\rt-thread\src\kservice.c \
-  lib\rtthread-nano\rt-thread\include\rtthread.h \
-  lib\rtthread-nano\rt-thread\bsp\_template\rtconfig.h \
-  lib\rtthread-nano\rt-thread\include\rtdebug.h \
-  lib\rtthread-nano\rt-thread\include\rtdef.h \
-  lib\rtthread-nano\rt-thread\include\rtservice.h \
-  lib\rtthread-nano\rt-thread\include\rtm.h \
-  lib\rtthread-nano\rt-thread\include\rthw.h
+.\obj\kservice.o: lib\rtthread-nano\rt-thread\src\kservice.c
+.\obj\kservice.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\kservice.o: .\lib\rtthread-nano\rt-thread\config\rtconfig.h
+.\obj\kservice.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh_config.h
+.\obj\kservice.o: .\lib\rtthread-nano\rt-thread\include\rtdebug.h
+.\obj\kservice.o: .\lib\rtthread-nano\rt-thread\include\rtdef.h
+.\obj\kservice.o: .\lib\rtthread-nano\rt-thread\include\rtservice.h
+.\obj\kservice.o: .\lib\rtthread-nano\rt-thread\include\rtm.h
+.\obj\kservice.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\kservice.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\obj\kservice.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh.h
+.\obj\kservice.o: .\lib\rtthread-nano\rt-thread\include\rthw.h

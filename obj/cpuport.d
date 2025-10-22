@@ -1,8 +1,11 @@
-./objects/cpuport.o: \
-  lib\rtthread-nano\rt-thread\libcpu\arm\cortex-m4\cpuport.c \
-  lib\rtthread-nano\rt-thread\include\rtthread.h \
-  lib\rtthread-nano\rt-thread\bsp\_template\rtconfig.h \
-  lib\rtthread-nano\rt-thread\include\rtdebug.h \
-  lib\rtthread-nano\rt-thread\include\rtdef.h \
-  lib\rtthread-nano\rt-thread\include\rtservice.h \
-  lib\rtthread-nano\rt-thread\include\rtm.h
+.\obj\cpuport.o: lib\rtthread-nano\rt-thread\libcpu\arm\cortex-m4\cpuport.c
+.\obj\cpuport.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\cpuport.o: .\lib\rtthread-nano\rt-thread\config\rtconfig.h
+.\obj\cpuport.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh_config.h
+.\obj\cpuport.o: .\lib\rtthread-nano\rt-thread\include\rtdebug.h
+.\obj\cpuport.o: .\lib\rtthread-nano\rt-thread\include\rtdef.h
+.\obj\cpuport.o: .\lib\rtthread-nano\rt-thread\include\rtservice.h
+.\obj\cpuport.o: .\lib\rtthread-nano\rt-thread\include\rtm.h
+.\obj\cpuport.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\cpuport.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\obj\cpuport.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh.h

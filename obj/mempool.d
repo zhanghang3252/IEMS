@@ -1,8 +1,12 @@
-./objects/mempool.o: lib\rtthread-nano\rt-thread\src\mempool.c \
-  lib\rtthread-nano\rt-thread\include\rthw.h \
-  lib\rtthread-nano\rt-thread\include\rtthread.h \
-  lib\rtthread-nano\rt-thread\bsp\_template\rtconfig.h \
-  lib\rtthread-nano\rt-thread\include\rtdebug.h \
-  lib\rtthread-nano\rt-thread\include\rtdef.h \
-  lib\rtthread-nano\rt-thread\include\rtservice.h \
-  lib\rtthread-nano\rt-thread\include\rtm.h
+.\obj\mempool.o: lib\rtthread-nano\rt-thread\src\mempool.c
+.\obj\mempool.o: .\lib\rtthread-nano\rt-thread\include\rthw.h
+.\obj\mempool.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\mempool.o: .\lib\rtthread-nano\rt-thread\config\rtconfig.h
+.\obj\mempool.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh_config.h
+.\obj\mempool.o: .\lib\rtthread-nano\rt-thread\include\rtdebug.h
+.\obj\mempool.o: .\lib\rtthread-nano\rt-thread\include\rtdef.h
+.\obj\mempool.o: .\lib\rtthread-nano\rt-thread\include\rtservice.h
+.\obj\mempool.o: .\lib\rtthread-nano\rt-thread\include\rtm.h
+.\obj\mempool.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\mempool.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\obj\mempool.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh.h

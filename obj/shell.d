@@ -1,0 +1,16 @@
+.\obj\shell.o: lib\rtthread-nano\rt-thread\components\finsh\shell.c
+.\obj\shell.o: .\lib\rtthread-nano\rt-thread\include\rthw.h
+.\obj\shell.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\shell.o: .\lib\rtthread-nano\rt-thread\config\rtconfig.h
+.\obj\shell.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh_config.h
+.\obj\shell.o: .\lib\rtthread-nano\rt-thread\include\rtdebug.h
+.\obj\shell.o: .\lib\rtthread-nano\rt-thread\include\rtdef.h
+.\obj\shell.o: .\lib\rtthread-nano\rt-thread\include\rtservice.h
+.\obj\shell.o: .\lib\rtthread-nano\rt-thread\include\rtm.h
+.\obj\shell.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\shell.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\obj\shell.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh.h
+.\obj\shell.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\shell.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\shell.o: lib\rtthread-nano\rt-thread\components\finsh\shell.h
+.\obj\shell.o: lib\rtthread-nano\rt-thread\components\finsh\msh.h

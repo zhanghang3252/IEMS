@@ -1,43 +1,53 @@
-./objects/board.o: lib\rtthread-nano\rt-thread\bsp\_template\board.c \
-  lib\rtthread-nano\rt-thread\include\rthw.h \
-  lib\rtthread-nano\rt-thread\include\rtthread.h \
-  lib\rtthread-nano\rt-thread\bsp\_template\rtconfig.h \
-  lib\rtthread-nano\rt-thread\include\rtdebug.h \
-  lib\rtthread-nano\rt-thread\include\rtdef.h \
-  lib\rtthread-nano\rt-thread\include\rtservice.h \
-  lib\rtthread-nano\rt-thread\include\rtm.h \
-  lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h \
-  lib\GD32F4xx_Firmware_Library\CMSIS\core_cm4.h \
-  lib\GD32F4xx_Firmware_Library\CMSIS\core_cmInstr.h \
-  lib\GD32F4xx_Firmware_Library\CMSIS\core_cmFunc.h \
-  lib\GD32F4xx_Firmware_Library\CMSIS\core_cm4_simd.h \
-  lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h \
-  user\gd32f4xx_libopt.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h \
-  lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h \
-  user\systick.h drive\usart.h
+.\obj\board.o: lib\rtthread-nano\rt-thread\config\board.c
+.\obj\board.o: .\lib\rtthread-nano\rt-thread\include\rthw.h
+.\obj\board.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\board.o: .\lib\rtthread-nano\rt-thread\config\rtconfig.h
+.\obj\board.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh_config.h
+.\obj\board.o: .\lib\rtthread-nano\rt-thread\include\rtdebug.h
+.\obj\board.o: .\lib\rtthread-nano\rt-thread\include\rtdef.h
+.\obj\board.o: .\lib\rtthread-nano\rt-thread\include\rtservice.h
+.\obj\board.o: .\lib\rtthread-nano\rt-thread\include\rtm.h
+.\obj\board.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\board.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\obj\board.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh.h
+.\obj\board.o: .\drive\usart.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\CMSIS\core_cm4.h
+.\obj\board.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\CMSIS\core_cmInstr.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\CMSIS\core_cmFunc.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\CMSIS\core_cm4_simd.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h
+.\obj\board.o: .\user\gd32f4xx_libopt.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
+.\obj\board.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\obj\board.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
+.\obj\board.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\board.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\board.o: .\user\systick.h

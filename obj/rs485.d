@@ -1,9 +1,6 @@
 .\obj\rs485.o: drive\rs485.c
 .\obj\rs485.o: drive\rs485.h
 .\obj\rs485.o: .\user\main.h
-.\obj\rs485.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\obj\rs485.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\obj\rs485.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\rs485.o: .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
 .\obj\rs485.o: .\lib\GD32F4xx_Firmware_Library\CMSIS\core_cm4.h
 .\obj\rs485.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -39,10 +36,13 @@
 .\obj\rs485.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h
 .\obj\rs485.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h
 .\obj\rs485.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
+.\obj\rs485.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\obj\rs485.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
 .\obj\rs485.o: .\user\systick.h
 .\obj\rs485.o: .\drive\led.h
 .\obj\rs485.o: .\drive\usart.h
+.\obj\rs485.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\rs485.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\rs485.o: .\drive\rtc.h
 .\obj\rs485.o: .\drive\sdcard.h
 .\obj\rs485.o: .\drive\rs485.h

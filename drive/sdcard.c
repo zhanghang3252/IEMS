@@ -2492,3 +2492,15 @@ sd_error_enum sd_io_init(void)
 	return status;
 }
 
+
+
+/*!
+    \brief      this function handles SDIO interrupt request
+    \param[in]  none
+    \param[out] none
+    \retval     none
+*/
+void SDIO_IRQHandler(void)
+{
+    sd_interrupts_process();
+}

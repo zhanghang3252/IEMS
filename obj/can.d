@@ -1,9 +1,6 @@
 .\obj\can.o: drive\can.c
 .\obj\can.o: drive\can.h
 .\obj\can.o: .\user\main.h
-.\obj\can.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\obj\can.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\obj\can.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\can.o: .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
 .\obj\can.o: .\lib\GD32F4xx_Firmware_Library\CMSIS\core_cm4.h
 .\obj\can.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -39,10 +36,13 @@
 .\obj\can.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h
 .\obj\can.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h
 .\obj\can.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
+.\obj\can.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\obj\can.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
 .\obj\can.o: .\user\systick.h
 .\obj\can.o: .\drive\led.h
 .\obj\can.o: .\drive\usart.h
+.\obj\can.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\can.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\can.o: .\drive\rtc.h
 .\obj\can.o: .\drive\sdcard.h
 .\obj\can.o: .\drive\rs485.h

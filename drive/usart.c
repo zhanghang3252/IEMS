@@ -31,7 +31,7 @@ void usart0_init(uint32_t baudval)
 	
 //	usart_interrupt_enable(USART0, USART_INT_TC);//开启发送完成
 	usart_interrupt_enable(USART0, USART_INT_RBNE);//开启接收区非空
-	usart_interrupt_enable(USART0, USART_INT_IDLE);//开启接收区空闲
+//	usart_interrupt_enable(USART0, USART_INT_IDLE);//开启接收区空闲
 
 	nvic_irq_enable(USART0_IRQn,0,0);
 	usart_enable(USART0);
@@ -101,33 +101,6 @@ void usart_send_data_num(uint32_t usart_periph, uint8_t* data,uint16_t data_num)
 		usart_data_transmit(usart_periph,data[temp]);
 		while(RESET == usart_flag_get(usart_periph, USART_FLAG_TC));	
 	}
-}
-
-
-
-// USART0中断处理函数
-void USART0_IRQHandler(void){
-    // 1处理RBNE中断（收到1个字节）
-    if(usart_interrupt_flag_get(USART0, USART_INT_FLAG_RBNE) && 
-			usart_flag_get(USART0, USART_FLAG_RBNE)) {
-        // 防止缓冲区溢出（预留1字节给'\0'，所以最大接收 USART_RX_BUF_SIZE-1 字节）
-        if(usart_rx_num < (USART_RX_BUF_SIZE - 1)){
-            usart_rx_buffer[usart_rx_num++] = usart_data_receive(USART0);  // 接收1字节
-        }
-				usart_flag_clear(USART0,USART_FLAG_RBNE);
-        usart_interrupt_flag_clear(USART0, USART_INT_FLAG_RBNE);  // 清除RBNE中断标志
-    }
-    if(usart_interrupt_flag_get(USART0, USART_INT_FLAG_IDLE) && 
-       usart_flag_get(USART0, USART_FLAG_IDLE)) {
-        uint32_t dummy = usart_data_receive(USART0);  // dummy read（无实际用途，仅清标志）
-        (void)dummy;  // 避免未使用变量警告   
-        usart_rx_buffer[usart_rx_num] = '\0';  // 有效数据末尾加'\0'，确保发送函数正常停止
-        usart_send_data(USART0, usart_rx_buffer);  // 发送接收的字符串（仅有效数据）
-        usart_rx_flag = 1;    // 标记接收完成（若主函数需要判断，可保留）
-        usart_rx_num = 0;     // 重置接收计数
-        memset(usart_rx_buffer, 0, USART_RX_BUF_SIZE);  // 可选：清空缓冲区，避免残留数据
-        usart_interrupt_flag_clear(USART0, USART_INT_FLAG_IDLE);  // 清除IDLE中断标志
-    }
 }
 
 

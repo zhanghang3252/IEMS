@@ -1,8 +1,12 @@
-./objects/idle.o: lib\rtthread-nano\rt-thread\src\idle.c \
-  lib\rtthread-nano\rt-thread\include\rthw.h \
-  lib\rtthread-nano\rt-thread\include\rtthread.h \
-  lib\rtthread-nano\rt-thread\bsp\_template\rtconfig.h \
-  lib\rtthread-nano\rt-thread\include\rtdebug.h \
-  lib\rtthread-nano\rt-thread\include\rtdef.h \
-  lib\rtthread-nano\rt-thread\include\rtservice.h \
-  lib\rtthread-nano\rt-thread\include\rtm.h
+.\obj\idle.o: lib\rtthread-nano\rt-thread\src\idle.c
+.\obj\idle.o: .\lib\rtthread-nano\rt-thread\include\rthw.h
+.\obj\idle.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\idle.o: .\lib\rtthread-nano\rt-thread\config\rtconfig.h
+.\obj\idle.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh_config.h
+.\obj\idle.o: .\lib\rtthread-nano\rt-thread\include\rtdebug.h
+.\obj\idle.o: .\lib\rtthread-nano\rt-thread\include\rtdef.h
+.\obj\idle.o: .\lib\rtthread-nano\rt-thread\include\rtservice.h
+.\obj\idle.o: .\lib\rtthread-nano\rt-thread\include\rtm.h
+.\obj\idle.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\idle.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\obj\idle.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh.h

@@ -1,8 +1,12 @@
-./objects/clock.o: lib\rtthread-nano\rt-thread\src\clock.c \
-  lib\rtthread-nano\rt-thread\include\rthw.h \
-  lib\rtthread-nano\rt-thread\include\rtthread.h \
-  lib\rtthread-nano\rt-thread\bsp\_template\rtconfig.h \
-  lib\rtthread-nano\rt-thread\include\rtdebug.h \
-  lib\rtthread-nano\rt-thread\include\rtdef.h \
-  lib\rtthread-nano\rt-thread\include\rtservice.h \
-  lib\rtthread-nano\rt-thread\include\rtm.h
+.\obj\clock.o: lib\rtthread-nano\rt-thread\src\clock.c
+.\obj\clock.o: .\lib\rtthread-nano\rt-thread\include\rthw.h
+.\obj\clock.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\clock.o: .\lib\rtthread-nano\rt-thread\config\rtconfig.h
+.\obj\clock.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh_config.h
+.\obj\clock.o: .\lib\rtthread-nano\rt-thread\include\rtdebug.h
+.\obj\clock.o: .\lib\rtthread-nano\rt-thread\include\rtdef.h
+.\obj\clock.o: .\lib\rtthread-nano\rt-thread\include\rtservice.h
+.\obj\clock.o: .\lib\rtthread-nano\rt-thread\include\rtm.h
+.\obj\clock.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\clock.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\obj\clock.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh.h

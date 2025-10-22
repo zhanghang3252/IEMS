@@ -1,8 +1,14 @@
-./objects/signal.o: lib\rtthread-nano\rt-thread\src\signal.c \
-  lib\rtthread-nano\rt-thread\include\rthw.h \
-  lib\rtthread-nano\rt-thread\include\rtthread.h \
-  lib\rtthread-nano\rt-thread\bsp\_template\rtconfig.h \
-  lib\rtthread-nano\rt-thread\include\rtdebug.h \
-  lib\rtthread-nano\rt-thread\include\rtdef.h \
-  lib\rtthread-nano\rt-thread\include\rtservice.h \
-  lib\rtthread-nano\rt-thread\include\rtm.h
+.\obj\signal.o: lib\rtthread-nano\rt-thread\src\signal.c
+.\obj\signal.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\signal.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\signal.o: .\lib\rtthread-nano\rt-thread\include\rthw.h
+.\obj\signal.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\signal.o: .\lib\rtthread-nano\rt-thread\config\rtconfig.h
+.\obj\signal.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh_config.h
+.\obj\signal.o: .\lib\rtthread-nano\rt-thread\include\rtdebug.h
+.\obj\signal.o: .\lib\rtthread-nano\rt-thread\include\rtdef.h
+.\obj\signal.o: .\lib\rtthread-nano\rt-thread\include\rtservice.h
+.\obj\signal.o: .\lib\rtthread-nano\rt-thread\include\rtm.h
+.\obj\signal.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
+.\obj\signal.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\obj\signal.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh.h

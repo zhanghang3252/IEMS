@@ -1,42 +1,31 @@
 #include "main.h"
-
-uint8_t rx485_buf[20];
-
-uint8_t usart_rx_buf[20];
+#include "rt_thread_function.h"
+#include <rtthread.h>
 
 int main(void)
 {	
-	systick_config();
-	led_init();
-	usart0_init(115200);
-//	usart2_init(115200);
-	i2c_init();
 	
-	i2c_eeprom_init();
+//	usart2_init(115200);
+//	i2c_init();
+//	i2c_eeprom_init();
 	
 	//can0_init();
 	//rs485_init();
 	
-	printf("system start \r\n");
-	if (sd_io_init() == SD_OK)//SD卡初始化
-		printf("Card init success!\r\n");
-	else
-		printf("Card init failed!\r\n");
-	i2c_24c02_test();
-	while(1)
-	{	
-//		usart_send_data_num(USART2,"AT\r\n",sizeof("AT\r\n"));
-//		can0_send_test();				
-//    rs485_send_data(1);
-//		rs485_receive_data(rx485_buf);
-//		printf("rx485_buf：%s",rx485_buf);
-		led_on();
-		delay_1ms(1000);
-		led_off();
-		delay_1ms(1000);	
-	}	
+//	rt_kprintf("system start \r\n");
+//	if (sd_io_init() == SD_OK)//SD卡初始化
+//		rt_kprintf("Card init success!\r\n");
+//	else
+//		rt_kprintf("Card init failed!\r\n");
+	
+	
+	
+	/* 创建线程 1，名称是 thread1，入口是 thread1_entry*/
+	rt_thread_t led_thread_tid = rt_thread_create("led_thread",led_thread, RT_NULL,128,1,10);
+	/* 如果获得线程控制块，启动这个线程 */
+	if (led_thread_tid != RT_NULL)
+		rt_thread_startup(led_thread_tid);
 }
-
 
 
 
