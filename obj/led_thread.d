@@ -10,7 +10,7 @@
 .\obj\led_thread.o: .\lib\rtthread-nano\rt-thread\include\rtthread.h
 .\obj\led_thread.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\obj\led_thread.o: .\lib\rtthread-nano\rt-thread\components\finsh\finsh.h
-.\obj\led_thread.o: .\drive\led.h
+.\obj\led_thread.o: user\main.h
 .\obj\led_thread.o: .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
 .\obj\led_thread.o: .\lib\GD32F4xx_Firmware_Library\CMSIS\core_cm4.h
 .\obj\led_thread.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -48,3 +48,16 @@
 .\obj\led_thread.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
 .\obj\led_thread.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\obj\led_thread.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
+.\obj\led_thread.o: user\gd32f4xx_it.h
+.\obj\led_thread.o: user\systick.h
+.\obj\led_thread.o: .\drive\led.h
+.\obj\led_thread.o: .\drive\usart.h
+.\obj\led_thread.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\led_thread.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\led_thread.o: .\drive\rtc.h
+.\obj\led_thread.o: .\drive\sdcard.h
+.\obj\led_thread.o: .\drive\rs485.h
+.\obj\led_thread.o: .\user\main.h
+.\obj\led_thread.o: .\drive\can.h
+.\obj\led_thread.o: .\drive\i2c.h
+.\obj\led_thread.o: .\drive\at24cxx.h

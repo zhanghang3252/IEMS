@@ -502,6 +502,21 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Middleware</GroupName>
+          <Files>
+            <File>
+              <FileName>linked_list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Middleware\linked_list.c</FilePath>
+            </File>
+            <File>
+              <FileName>linked_list.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Middleware\linked_list.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>lib/GD32F4xx_Library</GroupName>
           <Files>
             <File>
@@ -828,6 +843,11 @@
               <FileName>led_thread.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\user\led_thread.c</FilePath>
+            </File>
+            <File>
+              <FileName>wifi_thread_function.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\user\wifi_thread_function.c</FilePath>
             </File>
           </Files>
         </Group>

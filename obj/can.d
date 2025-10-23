@@ -38,6 +38,7 @@
 .\obj\can.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
 .\obj\can.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\obj\can.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
+.\obj\can.o: .\user\gd32f4xx_it.h
 .\obj\can.o: .\user\systick.h
 .\obj\can.o: .\drive\led.h
 .\obj\can.o: .\drive\usart.h

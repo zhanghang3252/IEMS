@@ -37,6 +37,7 @@
 .\obj\main.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
 .\obj\main.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\obj\main.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
+.\obj\main.o: user\gd32f4xx_it.h
 .\obj\main.o: user\systick.h
 .\obj\main.o: .\drive\led.h
 .\obj\main.o: .\drive\usart.h

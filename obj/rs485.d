@@ -38,6 +38,7 @@
 .\obj\rs485.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
 .\obj\rs485.o: C:\APP\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\obj\rs485.o: .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
+.\obj\rs485.o: .\user\gd32f4xx_it.h
 .\obj\rs485.o: .\user\systick.h
 .\obj\rs485.o: .\drive\led.h
 .\obj\rs485.o: .\drive\usart.h

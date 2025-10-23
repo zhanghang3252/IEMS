@@ -1,0 +1,4 @@
+--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\lib\GD32F4xx_Firmware_Library\CMSIS -I .\lib\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include -I .\lib\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include -I .\drive -I .\user -I .\lib\rtthread-nano\rt-thread\include -I .\lib\rtthread-nano\rt-thread\config -I .\lib\rtthread-nano\rt-thread\components\finsh
+-IC:\APP\Keil_v5\Packs\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include
+-D__UVISION_VERSION="543" -DGD32F407 -DUSE_STDPERIPH_DRIVER -DGD32F407 -DHXTAL_VALUE="8000000"
+-o .\obj\linked_list.o --omf_browse .\obj\linked_list.crf --depend .\obj\linked_list.d "Middleware\linked_list.c"

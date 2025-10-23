@@ -67,6 +67,7 @@
 ".\obj\shell.o"
 ".\obj\board.o"
 ".\obj\led_thread.o"
+".\obj\wifi_thread_function.o"
 --library_type=microlib --strict --scatter ".\obj\project.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

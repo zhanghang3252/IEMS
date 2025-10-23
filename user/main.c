@@ -4,8 +4,6 @@
 
 int main(void)
 {	
-	
-//	usart2_init(115200);
 //	i2c_init();
 //	i2c_eeprom_init();
 	
@@ -18,13 +16,22 @@ int main(void)
 //	else
 //		rt_kprintf("Card init failed!\r\n");
 	
-	
-	
 	/* 创建线程 1，名称是 thread1，入口是 thread1_entry*/
-	rt_thread_t led_thread_tid = rt_thread_create("led_thread",led_thread, RT_NULL,128,1,10);
-	/* 如果获得线程控制块，启动这个线程 */
-	if (led_thread_tid != RT_NULL)
-		rt_thread_startup(led_thread_tid);
+	static int led_delay =100;
+	rt_thread_t led_thread_tid = rt_thread_create("led_thread",led_thread,&led_delay,128,1,10);
+	if (led_thread_tid != RT_NULL){
+		rt_thread_startup(led_thread_tid);/* 如果获得线程控制块，启动这个线程 */
+	}	
+	
+	rt_thread_t wifi_thread_tid = rt_thread_create("wifi_thread",wifi_thread,RT_NULL,512,0,10);
+	if (wifi_thread_tid != RT_NULL){
+		rt_thread_startup(wifi_thread_tid);/* 如果获得线程控制块，启动这个线程 */
+	}
+	
+	while(1){
+	
+		rt_thread_delay(10);
+	}
 }
 
 
